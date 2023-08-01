@@ -6,7 +6,10 @@ export const BackgroundContainer = styled.div`
   width: 1920px;
   height: 100vh;
   flex-direction: column;
+<<<<<<< Updated upstream
   background: #76116f;
+=======
+>>>>>>> Stashed changes
   overflow-y: auto;
 `;
 export const Title = styled.div`
