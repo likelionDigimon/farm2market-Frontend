@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./component/project/header/header";  // 헤더 컴포넌트를 불러옵니다.
 import Main from "./component/project/main/main";
 import Mypage from "./component/project/mypage/mypage";
 import Signin from "./component/project/signin/signin";
@@ -10,6 +11,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/mypage" element={<Mypage />} />
