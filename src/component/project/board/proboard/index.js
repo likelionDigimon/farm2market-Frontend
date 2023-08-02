@@ -12,28 +12,6 @@ const Proboard = () => {
     justify-content: space-between;
     margin-top: 300px;
   `;
-  const SignupInput = styled.input`
-    color: #000;
-    width: 294px;
-    height: 388px;
-    border-radius: 10px;
-    border: 0px;
-    padding: 20px;
-    font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 20px;
-    margin-bottom: 16px;
-    background: #d9d9d9;
-    ::placeholder {
-      color: lightgray;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 700;
-    }
-  `;
   return (
     <>
       <Container>
