@@ -6,6 +6,7 @@ import Signup from "./component/project/signup/signup";
 import Proboard from "./component/project/board/proboard";
 import Sellerboard from "./component/project/board/sellerboard";
 import Community from "./component/project/community";
+import PersonalInquiry from "./component/Inquiry/personInquiry";
 import "./App.css";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/proboard" element={<Proboard />} />
           <Route path="/sellerboard" element={<Sellerboard />} />
           <Route path="/community" element={<Community />} />
+          <Route path="/Inquiry/personal" element={<PersonalInquiry />} />
         </Routes>
       </BrowserRouter>
     </div>
