@@ -1,0 +1,9 @@
+.test {
+    display: flex;
+    flex-direction: column;
+
+    background-color: azure;
+    background-color: blueviolet;
+    background-color: #C0E0EE;;
+
+}

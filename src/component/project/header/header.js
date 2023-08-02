@@ -23,19 +23,18 @@ const Header = () => {
         <DropdownMenu>
           <DropNav>
             <DropNavGroup>
-              <DropItem href="#dropdown1">메뉴1</DropItem>
-              <DropItem href="#dropdown2">메뉴2</DropItem>
-              <DropItem href="#dropdown3">메뉴3</DropItem>
-              <DropItem href="#dropdown3">메뉴4</DropItem>
+              <DropItem href="#dropdown1">판매자 정보 게시판</DropItem>
+              <DropItem href="#dropdown2">농산물 등록 게시판</DropItem>
+              <DropItem href="#dropdown3">고객 문의</DropItem>
             </DropNavGroup>
             <DropNavGroup>
-              <DropItem href="#dropdown1">메뉴1</DropItem>
+              <DropItem href="#dropdown1">가격 정보 보기</DropItem>
             </DropNavGroup>
             <DropNavGroup>
-              <DropItem href="#dropdown1">메뉴1</DropItem>
+              <DropItem href="#dropdown1">소통 하기</DropItem>
             </DropNavGroup>
             <DropNavGroup>
-              <DropItem href="#dropdown1">메뉴1</DropItem>
+              <DropItem href="#dropdown1">정보 수정</DropItem>
             </DropNavGroup>
           </DropNav>
         </DropdownMenu>
