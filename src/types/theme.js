@@ -1,0 +1,50 @@
+import "@emotion/react";
+
+module.exports = {
+  text: {
+    heading1: { fontSize: "4rem", fontWeight: "700" },
+    heading2: { fontSize: "2.4rem", fontWeight: "700" },
+    heading3: { fontSize: "2.2rem", fontWeight: "700" },
+    heading4: { fontSize: "2.0rem", fontWeight: "700" },
+    heading5: { fontSize: "1.8rem", fontWeight: "400" },
+    body1: { fontSize: "28px", fontWeight: "500" },
+    body1_bold: { fontSize: "28rem", fontWeight: "700" },
+    body2: { fontSize: "1.4rem", fontWeight: "700" },
+    body2_bold: { fontSize: "1.4rem", fontWeight: "400" },
+    body3: { fontSize: "40px", fontWeight: "400" },
+    body3_bold: { fontSize: "40px", fontWeight: "700" },
+  },
+  palette: {
+    primary: {
+      100: "#...",
+      200: "#...",
+      300: "#...",
+      400: "#...",
+      500: "#...",
+      600: "#...",
+      700: "#...",
+      800: "#...",
+      900: "#...",
+    },
+    gray: {
+      900: "#212121",
+      800: "#404040",
+      700: "#616161",
+      600: "#757575",
+      500: "#9e9e9e",
+      400: "#bdbdbd",
+      300: "#e0e0e0",
+      200: "#eeeeee",
+      100: "#f5f5f5",
+      50: "#fafafa",
+      black: "#000000",
+      white: "#ffffff",
+    },
+    semantic: {
+      success: { 500: "#..." },
+      info: { 500: "#..." },
+      warning: { 500: "#..." },
+      danger: { 500: "#..." },
+    },
+  },
+};
