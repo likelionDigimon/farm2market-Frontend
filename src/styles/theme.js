@@ -11,55 +11,45 @@ const font = {
 
 const theme = {
   textVariants: {
-    heading1: {
-      "font-size": font.xxxl,
-      "font-weight": "700",
-      "letter-spacing": "-0.12rem",
-    },
-    heading2: {
-      "font-size": font.xxl,
-      "font-weight": "700",
-      "letter-spacing": "-0.066rem",
-    },
-    heading3: {
-      "font-size": font.xl,
-      "font-weight": "700",
-      "letter-spacing": "-0.06rem",
-    },
-    heading4: {
-      "font-size": font.lg,
-      "font-weight": "400",
-      "letter-spacing": "-0.054rem",
-    },
     body1: {
-      "font-size": font.md,
-      "font-weight": "700",
+      "font-size": "24px",
+      "font-weight": "500",
       "letter-spacing": "-0.048rem",
     },
     body1_bold: {
-      "font-size": font.md,
-      "font-weight": "400",
+      "font-size": "24px",
+      "font-weight": "700",
       "letter-spacing": "-0.048rem",
     },
     body2: {
-      "font-size": font.sm,
-      "font-weight": "700",
+      "font-size": "28px",
+      "font-weight": "500",
       "letter-spacing": "-0.042rem",
     },
     body2_bold: {
-      "font-size": font.sm,
-      "font-weight": "400",
+      "font-size": "28px",
+      "font-weight": "700",
       "letter-spacing": "-0.042rem",
     },
-    detail: {
-      "font-size": font.xs,
-      "font-weight": "700",
-      "letter-spacing": "-0.036rem",
+    body3: {
+      "font-size": "40px",
+      "font-weight": "500",
+      "letter-spacing": "-0.048rem",
     },
-    detail_bold: {
-      "font-size": font.xs,
-      "font-weight": "400",
-      "letter-spacing": "-0.036rem",
+    body3_bold: {
+      "font-size": "40px",
+      "font-weight": "700",
+      "letter-spacing": "-0.048rem",
+    },
+    body4: {
+      "font-size": "48px",
+      "font-weight": "500",
+      "letter-spacing": "-0.042rem",
+    },
+    body4_bold: {
+      "font-size": "48px",
+      "font-weight": "700",
+      "letter-spacing": "-0.042rem",
     },
   },
   palette: {
