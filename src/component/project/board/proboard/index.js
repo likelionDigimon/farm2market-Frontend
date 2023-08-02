@@ -1,11 +1,14 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { IndexContainer, InnerContainer, SignButton } from "./component";
+import { Container, ProjectBox, Title } from "../../../emotion/component";
+import test from "../../../../json/test.json";
 const Proboard = () => {
   const Inner = styled.div`
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    gap: 40px;
     justify-content: space-between;
     margin-top: 300px;
   `;
@@ -33,21 +36,25 @@ const Proboard = () => {
   `;
   return (
     <>
-      <IndexContainer>
-        <InnerContainer>
-          <h1>판매자 게시판</h1>
-          <Inner>
-            <SignupInput placeholder="사용할 아이디를 입력하세요" />
-            <SignupInput placeholder="사용할 비밀번호를 입력하세요" />
-            <SignupInput placeholder="이름을 입력하세요" />
-            <SignupInput placeholder="휴대폰 번호를 입력하세요" />
-            <SignupInput placeholder="사용할 아이디를 입력하세요" />
-            <SignupInput placeholder="사용할 비밀번호를 입력하세요" />
-            <SignupInput placeholder="이름을 입력하세요" />
-            <SignupInput placeholder="휴대폰 번호를 입력하세요" />
-          </Inner>
-        </InnerContainer>
-      </IndexContainer>
+      <Container>
+        <Title>판매자 게시판</Title>
+        <IndexContainer>
+          <InnerContainer>
+            <Inner>
+              {test &&
+                test.Project.map((project) => (
+                  <ProjectBox
+                    key={project.id}
+                    title={project.title}
+                    content={project.content}
+                    tags={project.tags}
+                    imageSrc={project.imageSrc}
+                  />
+                ))}
+            </Inner>
+          </InnerContainer>
+        </IndexContainer>
+      </Container>
     </>
   );
 };

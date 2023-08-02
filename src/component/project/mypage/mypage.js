@@ -1,7 +1,6 @@
 import React from "react";
 import {
   InnerContainer,
-  BackgroundContainer,
   Title,
   LeftContainer,
   RightContainer,
@@ -19,12 +18,12 @@ import {
   Mybutton,
   MyLoge,
 } from "./component";
-import SvgWithMargin, { Rowplace } from "../../emotion/component";
+import SvgWithMargin, { Container, Rowplace } from "../../emotion/component";
 
 const Mypage = () => {
   return (
     <>
-      <BackgroundContainer>
+      <Container>
         <Title>마이페이지</Title>
         <InnerContainer>
           <LeftContainer>
@@ -144,7 +143,7 @@ const Mypage = () => {
             </BottomSection>
           </CustomRightContainer>
         </InnerContainer>
-      </BackgroundContainer>
+      </Container>
     </>
   );
 };

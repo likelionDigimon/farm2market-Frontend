@@ -8,70 +8,98 @@ const StyledProjectBox = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  color: #ffffff;
-  padding: 1.6rem 2.1rem;
-  width: 37rem;
-  height: 39.5rem;
-  background: #212121;
-  border-radius: 1.9rem;
+  padding: 20px;
+  padding-bottom: 0px;
+  color: #000;
+  width: 294px;
+  height: 408px;
+  border-radius: 10px;
+  background: #f4f7f3;
   margin: 0;
+  img.project-image {
+    width: 294px;
+    height: 18.0625em;
+    border-radius: 0.625em;
+    margin-bottom: 1em;
+  }
 `;
+
 const StyledProjectTag = styled.div`
   display: flex;
   flex-direction: row;
+  margin: 5px 5px;
 `;
+
 const StyledTag = styled.div`
-  border-radius: 0.5rem;
-  background: #4f85e8;
-  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  background: #76c56f;
+  padding: 10px 10px;
   margin: 0 0.9rem 0.9rem 0;
   color: #fff;
-  font-family: Pretendard;
-  font-size: 1.4rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.42px;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
   display: flex;
   align-items: center;
   justify-content: center;
 `;
+
 const StyledTitle = styled.h2`
-  color: #fff;
-  font-family: Pretendard;
+  color: #000;
+  font-family: "Pretendard";
   font-size: 1.5625em;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.75px;
-  margin-bottom: 0.625em;
+  margin: 0px 10px;
 `;
+
 const StyledText = styled.p`
-  color: #fff;
-  font-family: Pretendard;
+  color: #000;
+  font-family: "Pretendard";
   font-size: 1em;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.48px;
+  margin: 5px 10px;
 `;
 
-export const ProjectBox = ({ title, content }) => {
+/**
+ * Projectbox 컴포넌트
+ * @component ProjectBox
+ * @param {string} title - 프로젝트 제목
+ * @param {string} content - 프로젝트 내용
+ * @param {string[]} tags - 프로젝트 태그들의 배열
+ */
+export const ProjectBox = ({ title, content, tags = [], imageSrc }) => {
+  const generatedTags = tags.length === 0 ? ["임의 태그"] : tags;
   return (
-    <StyledProjectBox title={title} content={content}>
+    <StyledProjectBox title={title} content={content} tags={tags}>
       <img
-        src="https://i.ibb.co/yktPkxP/image-5.png"
+        src={imageSrc} // 이미지 경로 설정
         alt="Project"
         className="project-image"
         style={{
-          width: "20.5625em",
-          height: "14.0625em",
+          width: "294px",
+          height: "18.0625em",
           borderRadius: "0.625em",
           marginBottom: "1em",
         }}
       />
+
       <StyledTitle>{title}</StyledTitle>
-      <StyledText>{content}</StyledText>
+      <StyledText>
+        {content.length > 39 ? content.substring(0, 39) + "..." : content}
+      </StyledText>
+      {generatedTags && (
+        <StyledProjectTag>
+          {generatedTags.map((tag) => (
+            <StyledTag key={tag}>{tag}</StyledTag>
+          ))}
+        </StyledProjectTag>
+      )}
     </StyledProjectBox>
   );
 };
@@ -117,3 +145,53 @@ const SvgWithMargin = () => {
 };
 
 export default SvgWithMargin;
+
+export const Container = styled.div`
+  background-color: #fff;
+  display: flex;
+  width: 1920px;
+  height: 100vh;
+  flex-direction: column;
+  overflow-y: auto;
+`;
+
+export const Title = styled.div`
+  color: #000;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: 210 OmniGothic;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.2; /* 55.556% */
+  border-left: 5px black solid;
+  padding-left: 20px;
+  margin-left: 147px;
+  margin-top: 120px;
+  display: inline-flex;
+`;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 147px;
+  margin-top: 120px;
+`;
+
+export const Button = styled.div`
+  width: 147px;
+  height: 41px;
+  border-radius: 57px;
+  background: #76c56f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer;
+`;

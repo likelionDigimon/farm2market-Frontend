@@ -10,14 +10,13 @@ export const IndexContainer = styled.div`
 
 export const InnerContainer = styled.div`
   margin-top: 50px;
-  width: 1404px;
+  width: 1626px;
   height: 701px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   border-radius: 30px;
   justify-content: center;
-  padding: 64px;
 `;
 export const SignButton = styled.div`
   width: 636px;
