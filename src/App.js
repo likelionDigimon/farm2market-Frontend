@@ -5,6 +5,8 @@ import Mypage from "./component/project/mypage/mypage";
 import Signin from "./component/project/signin/signin";
 import Signup from "./component/project/signup/signup";
 import Proboard from "./component/project/proboard/proboard";
+import QuestionBoard from "./component/project/questionboard/questionboard";
+import AIWriting from "./component/project/aiwriting/aiwriting";
 import "./App.css";
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/proboard" element={<Proboard />} />
+          <Route path="/questionboard" element={<QuestionBoard />}/>
+          <Route path="/aiwriting" element={<AIWriting />}/>
         </Routes>
       </BrowserRouter>
     </div>
