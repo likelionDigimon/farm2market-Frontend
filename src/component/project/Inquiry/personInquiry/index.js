@@ -5,7 +5,7 @@ import {
   Title,
   ButtonContainer,
   Button,
-} from "../../emotion/component";
+} from "../../../emotion/component";
 const PersonalInquiry = () => {
   const OuterContainer = styled.div`
     display: flex;

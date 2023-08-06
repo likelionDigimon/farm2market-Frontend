@@ -1,14 +1,3 @@
-const font = {
-  xxs: "1.1rem",
-  xs: "1.2rem",
-  sm: "1.4rem",
-  md: "1.6rem",
-  lg: "1.8rem",
-  xl: "2.0rem",
-  xxl: "2.2rem",
-  xxxl: "4.0rem",
-};
-
 const theme = {
   textVariants: {
     body1: {
@@ -99,20 +88,3 @@ const theme = {
 };
 
 export default theme;
-
-// 예시
-// primary: {
-//   "font-weight": '700',
-//   "letter-spacing"white',
-//   backgroundColor: 'primary.500',
-//   '&:hover': {
-//     backgroundColor: 'primary.700',
-//   },
-//   '&:active': {
-//     backgroundColor: 'primary.800',
-//   },
-//   '&:disabled': {
-//     color: 'primary.200',
-//     backgroundColor: 'primary.100',
-//   },
-// },
