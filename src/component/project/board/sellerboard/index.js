@@ -1,32 +1,17 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { IndexContainer, InnerContainer, SignButton } from "./component";
+import { IndexContainer, InnerContainer, OuterContainer } from "./component";
 import {
   Container,
   ProjectBox,
   Title,
   ButtonContainer,
   Button,
+  Inner,
 } from "../../../emotion/component";
 import test2 from "../../../../json/test2.json";
 
 const Proboard = () => {
-  const OuterContainer = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-  `;
-
-  const Inner = styled.div`
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: space-between;
-    margin-top: 300px;
-  `;
-
   return (
     <>
       <Container>

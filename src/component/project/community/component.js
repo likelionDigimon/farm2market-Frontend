@@ -37,3 +37,47 @@ export const SignButton = styled.div`
   align-items: center;
   margin-top: 30px;
 `;
+
+export const OuterContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+`;
+
+export const TableContainer = styled.div`
+  margin-top: 40px;
+  padding: 0 147px;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    th {
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 10px;
+      background: #76c56f;
+    }
+    td {
+      border: 1px solid #dfdfdf;
+      padding: 10px;
+    }
+    th:nth-of-type(1) {
+      width: 1361px;
+    }
+    th:nth-of-type(2) {
+      width: 265px;
+    }
+    td {
+      height: 60px;
+    }
+    input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: transparent;
+      color: #000;
+      font-family: Inter;
+      font-size: 14px;
+    }
+  }
+`;

@@ -304,7 +304,17 @@ export const Button = styled.div`
   font-style: normal;
   font-weight: 600;
   cursor: pointer;
+  margin-right: 10px;
   svg {
     margin-right: 10px;
   }
+`;
+
+export const Inner = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  margin-top: 300px;
 `;
