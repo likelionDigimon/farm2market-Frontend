@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import React, { ReactNode } from "react";
-import theme from "../../styles/theme";
+
 import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
 
 const StyledProjectBox = styled.div`
   display: flex;
@@ -276,7 +276,7 @@ export const Title = styled.div`
   border-left: 5px black solid;
   padding-left: 20px;
   margin-left: 147px;
-  margin-top: 120px;
+  margin-top: 80px;
   display: inline-flex;
 `;
 
@@ -285,7 +285,7 @@ export const ButtonContainer = styled.div`
   align-items: center;
   gap: 20px;
   margin-right: 147px;
-  margin-top: 120px;
+  margin-top: 80px;
 `;
 
 export const Button = styled.div`
@@ -313,8 +313,21 @@ export const Button = styled.div`
 export const Inner = styled.div`
   width: 100%;
   display: flex;
+  gap: 80px;
   flex-wrap: wrap;
-  gap: 40px;
-  justify-content: space-between;
   margin-top: 300px;
+`;
+export const FootContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 350px;
+  margin-bottom: 200px;
+`;
+
+export const StyledLinkNavItem = styled(Link)`
+  display: inline-block;
+  p {
+    margin: 0;
+  }
 `;

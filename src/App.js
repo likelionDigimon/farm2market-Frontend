@@ -9,11 +9,13 @@ import Agriboard from "./component/project/board/agricultboard";
 import Community from "./component/project/community";
 import PersonalInquiry from "./component/project/Inquiry/personInquiry";
 import "./App.css";
+import Header from "./component/project/header/header";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/mypage" element={<Mypage />} />

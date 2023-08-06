@@ -106,39 +106,37 @@ const Agriboard = () => {
           </InnerContainer>
         </IndexContainer>
         <FootContainer>
-          <FootContainer>
-            <Button onClick={handlePrevPage}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M8.1649 12.3704L14.7953 18.8001C15.2091 19.2013 16 18.9581 16 18.4297V5.5703C16 5.0419 15.2091 4.7987 14.7953 5.1999L8.1649 11.6296C7.945 11.8427 7.9451 12.1573 8.1649 12.3704Z"
-                  fill="white"
-                />
-              </svg>
-              이전 페이지
-            </Button>
+          <Button onClick={handlePrevPage}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M8.1649 12.3704L14.7953 18.8001C15.2091 19.2013 16 18.9581 16 18.4297V5.5703C16 5.0419 15.2091 4.7987 14.7953 5.1999L8.1649 11.6296C7.945 11.8427 7.9451 12.1573 8.1649 12.3704Z"
+                fill="white"
+              />
+            </svg>
+            이전 페이지
+          </Button>
 
-            <Button onClick={handleNextPage}>
-              다음 페이지
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M15.8351 11.6296L9.20467 5.1999C8.79094 4.79869 8 5.04189 8 5.5703V18.4297C8 18.9581 8.79094 19.2013 9.20467 18.8001L15.8351 12.3704C16.055 12.1573 16.0549 11.8427 15.8351 11.6296Z"
-                  fill="white"
-                />
-              </svg>
-            </Button>
-          </FootContainer>
+          <Button onClick={handleNextPage}>
+            다음 페이지
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M15.8351 11.6296L9.20467 5.1999C8.79094 4.79869 8 5.04189 8 5.5703V18.4297C8 18.9581 8.79094 19.2013 9.20467 18.8001L15.8351 12.3704C16.055 12.1573 16.0549 11.8427 15.8351 11.6296Z"
+                fill="white"
+              />
+            </svg>
+          </Button>
         </FootContainer>
       </Container>
     </>

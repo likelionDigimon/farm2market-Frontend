@@ -97,7 +97,8 @@ export const SignButton = styled.div`
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  display: flex;
+  display: inline-flex;
+  margin-left: 80px;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
@@ -115,7 +116,7 @@ export const Signcheck = styled.div`
   display: flex;
   margin-left: 50px;
   justify-content: center;
-  & > p {
+  p {
     margin: 60px 50px; /* 원하는 간격 크기로 설정 */
   }
 `;

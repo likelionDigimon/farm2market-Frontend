@@ -48,5 +48,6 @@ export const FootContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 150px;
+  margin: 350px;
+  margin-bottom: 200px;
 `;

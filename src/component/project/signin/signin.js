@@ -10,6 +10,8 @@ import {
   InputId,
   InputPass,
 } from "./component";
+import { Nav, NavItem } from "../header/component";
+import { Link } from "react-router-dom";
 
 const Mypage = () => {
   return (
@@ -22,7 +24,12 @@ const Mypage = () => {
             <InputId placeholder="아이디를 입력해주세요" />
             <InputPass placeholder="비밀번호를 입력해주세요" />
           </form>
-          <SignButton>로그인</SignButton>
+          <Nav>
+            <NavItem as={Link} to="/proboard">
+              <SignButton>로그인</SignButton>
+            </NavItem>
+          </Nav>
+
           <Signcheck>
             <p>회원가입</p>
             <p>아이디/ 비밀 번호 찾기</p>
