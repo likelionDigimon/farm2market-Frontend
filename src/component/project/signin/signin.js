@@ -25,7 +25,7 @@ const Mypage = () => {
             <InputPass placeholder="비밀번호를 입력해주세요" />
           </form>
           <Nav>
-            <NavItem as={Link} to="/proboard">
+            <NavItem as={Link} to="/">
               <SignButton>로그인</SignButton>
             </NavItem>
           </Nav>
