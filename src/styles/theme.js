@@ -1,42 +1,74 @@
 const theme = {
   textVariants: {
     body1: {
+      "font-family": "Inter",
       "font-size": "24px",
       "font-weight": "500",
       "letter-spacing": "-0.048rem",
     },
     body1_bold: {
+      "font-family": "Inter",
       "font-size": "24px",
       "font-weight": "700",
       "letter-spacing": "-0.048rem",
     },
     body2: {
+      "font-family": "Inter",
       "font-size": "28px",
       "font-weight": "500",
       "letter-spacing": "-0.042rem",
     },
     body2_bold: {
+      "font-family": "Inter",
       "font-size": "28px",
       "font-weight": "700",
       "letter-spacing": "-0.042rem",
     },
     body3: {
+      "font-family": "Inter",
       "font-size": "40px",
       "font-weight": "500",
       "letter-spacing": "-0.048rem",
     },
     body3_bold: {
+      "font-family": "Inter",
       "font-size": "40px",
       "font-weight": "700",
       "letter-spacing": "-0.048rem",
     },
     body4: {
+      "font-family": "Inter",
       "font-size": "48px",
       "font-weight": "500",
       "letter-spacing": "-0.042rem",
     },
     body4_bold: {
+      "font-family": "Inter",
       "font-size": "48px",
+      "font-weight": "700",
+      "letter-spacing": "-0.042rem",
+    },
+    body5: {
+      "font-family": "Inter",
+      "font-size": "20px",
+      "font-weight": "500",
+      "letter-spacing": "-0.042rem",
+    },
+    body5_bold: {
+      "font-family": "Inter",
+      "font-size": "20px",
+      "font-weight": "700",
+      "letter-spacing": "-0.042rem",
+    },
+    body6: {
+      "font-family": "Inter",
+      "font-size": "32px",
+      "font-weight": "500",
+      "letter-spacing": "-0.042rem",
+    },
+    body6_bold: {
+      "font-family": "Inter",
+      "font-size": "32px",
       "font-weight": "700",
       "letter-spacing": "-0.042rem",
     },

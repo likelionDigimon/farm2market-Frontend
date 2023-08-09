@@ -1,15 +1,16 @@
-import styled from 'styled-components';
-import searchLogo from '../../../img/header/searchLogo.svg'
-import searchslideLogo from '../../../img/header/searchslideLogo.svg'
+import styled from "styled-components";
+import searchLogo from "../../../img/header/searchLogo.svg";
+import searchslideLogo from "../../../img/header/searchslideLogo.svg";
 
 export const HeaderContainer = styled.header`
   position: relative;
   width: 1920px;
   height: 66px;
-  background-color: #76C56F;
+  background-color: #76c56f;
   display: flex;
   align-items: center;
   margin: 0 auto;
+  margin-bottom: 100px;
 `;
 
 export const Logo = styled.div`
@@ -26,9 +27,9 @@ export const Nav = styled.nav`
 `;
 
 export const NavItem = styled.a`
-  color: #FFF;
+  color: #fff;
   width: 179px;
-  font-feature-settings: 'clig' off, 'liga' off;
+  font-feature-settings: "clig" off, "liga" off;
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
@@ -37,17 +38,16 @@ export const NavItem = styled.a`
   text-decoration: none;
 `;
 
-
 export const SearchBar = styled.input.attrs({
-    type: 'text'
-  })`
+  type: "text",
+})`
   width: 333px;
   height: 33px;
   flex-shrink: 0;
   border-radius: 4px;
   border: none;
   margin-left: 80px;
-  padding-left: 30px; 
+  padding-left: 30px;
   padding-right: 30px;
   background-image: url(${searchLogo}), url(${searchslideLogo});
   background-position: 10px center, calc(100% - 10px) center;
@@ -60,7 +60,7 @@ export const LoginButton = styled.div`
   height: 33px;
   flex-shrink: 0;
   border-radius: 55px;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   color: white;
   display: flex;
   justify-content: center;
@@ -72,29 +72,29 @@ export const LoginButton = styled.div`
 
 export const DropdownMenu = styled.div`
   position: absolute;
-  top: 66px; 
+  top: 66px;
   width: 1920px;
   left: 0;
   height: 210px;
-  background-color: #76C56F;
-  z-index: 10;  
+  background-color: #76c56f;
+  z-index: 10;
 `;
 
 export const DropNav = styled.nav`
   display: flex;
   justify-content: space-between;
   width: 914px;
-  background-color: #76C56F;
+  background-color: #76c56f;
   margin-left: 254px;
-  `;
+`;
 
 export const DropNavGroup = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 37px;
   width: 179px;
-  background-color: #76C56F;
-  `;
+  background-color: #76c56f;
+`;
 
 export const DropItem = styled.a`
   color: white;

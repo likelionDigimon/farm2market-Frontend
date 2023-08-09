@@ -2,7 +2,9 @@
 import { css } from "@emotion/react";
 
 import styled from "@emotion/styled";
+import { type } from "@testing-library/user-event/dist/type";
 import { Link } from "react-router-dom";
+import theme from "../../styles/theme";
 
 const StyledProjectBox = styled.div`
   display: flex;
@@ -331,3 +333,118 @@ export const StyledLinkNavItem = styled(Link)`
     margin: 0;
   }
 `;
+
+export const Inners = ({ children }) => (
+  <div
+    css={css`
+      width: 120rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    `}
+  >
+    {children}
+  </div>
+);
+
+export const InnerContainer = ({ width, children }) => (
+  <section
+    css={css`
+      width: ${width};
+      height: auto;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding: 4.5rem;
+      background: #76c56f;
+      border-radius: 2rem;
+    `}
+  >
+    {children}
+  </section>
+);
+export const InputContainer = ({ width, children }) => (
+  <section
+    css={css`
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 2.5rem;
+    `}
+  >
+    {children}
+  </section>
+);
+
+export const SignTitle = styled.div`
+  color: #fff;
+  ${theme.textVariants.body6_bold}
+  margin-bottom: 3.6rem;
+`;
+
+export const SignButton = styled.div`
+  width: 40rem;
+  height: 4.8rem;
+  border-radius: 5rem;
+  background: #3a6e67;
+  color: #fff;
+  ${theme.textVariants.body1}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+export const SignInput = styled.input`
+  width: 39.75rem;
+  border-radius: 0.6rem;
+  border: 0px;
+  padding: 1.6rem 2.5rem;
+  margin-bottom: 1rem;
+  ${theme.textVariants.body5_bold}
+
+  ::placeholder {
+    border: 0px;
+    color: lightgray;
+    ${theme.textVariants.body5_bold}
+  }
+`;
+
+export const CheckContainer = ({ children }) => (
+  <div
+    css={css`
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      position: relative;
+      left: 200px;
+      gap: 2rem;
+    `}
+  >
+    {children}
+  </div>
+);
+
+export const Cblock = ({ width, background, color, children }) => (
+  <div
+    css={css`
+      width: ${width};
+      margin: 0 auto;
+      display: flex;
+      text-align: center;
+      align-items: center; /* 수직 가운데 정렬 */
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 5px 5px 0px 0px;
+      padding: 0.5rem 1.5rem;
+      background: ${background};
+      color: ${color};
+      ${theme.textVariants.body5_bold}
+    `}
+  >
+    {children}
+  </div>
+);

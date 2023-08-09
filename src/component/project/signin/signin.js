@@ -31,8 +31,8 @@ const Mypage = () => {
           </Nav>
 
           <Signcheck>
-            <p>회원가입</p>
-            <p>아이디/ 비밀 번호 찾기</p>
+            <Link to="/signup">회원가입</Link>
+            <Link to="/findid">아이디/비밀번호 찾기</Link>
           </Signcheck>
         </InnerContainer>
       </IndexContainer>

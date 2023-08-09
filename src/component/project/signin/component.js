@@ -116,7 +116,7 @@ export const Signcheck = styled.div`
   display: flex;
   margin-left: 50px;
   justify-content: center;
-  p {
+  a {
     margin: 60px 50px; /* 원하는 간격 크기로 설정 */
   }
 `;

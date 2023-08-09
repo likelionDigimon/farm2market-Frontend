@@ -8,6 +8,9 @@ import Sellerboard from "./component/project/board/sellerboard";
 import Agriboard from "./component/project/board/agricultboard";
 import Community from "./component/project/community";
 import PersonalInquiry from "./component/project/Inquiry/personInquiry";
+import Findid from "./component/project/find/findid";
+import Findpassword from "./component/project/find/findpassword";
+
 import "./App.css";
 import Header from "./component/project/header/header";
 
@@ -26,6 +29,8 @@ function App() {
           <Route path="/agriboard" element={<Agriboard />} />
           <Route path="/community" element={<Community />} />
           <Route path="/Inquiry/personal" element={<PersonalInquiry />} />
+          <Route path="/findid" element={<Findid />} />
+          <Route path="/findpass" element={<Findpassword />} />
         </Routes>
       </BrowserRouter>
     </div>

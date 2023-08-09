@@ -1,23 +1,15 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { IndexContainer, InnerContainer, SignButton } from "./component";
-import { ProjectBox } from "../../emotion/component";
+import theme from "../../../styles/theme";
+import { SignTitle } from "../../emotion/component";
+
 const Signup = () => {
-  const SignupTitle = styled.div`
-    color: #fff;
-    font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 26.5px; /* 82.813% */
-    margin-bottom: 58px;
-  `;
   const Inner = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center; /* 세로 중앙 정렬 */
+    align-items: center;
     flex-direction: column;
   `;
 
@@ -27,26 +19,20 @@ const Signup = () => {
     border-radius: 10px;
     border: 0px;
     padding: 26px 40px;
-    font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 20px;
     margin-bottom: 16px;
+    ${theme.textVariants.body5_bold}
 
     ::placeholder {
+      border: 0px;
       color: lightgray;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 700;
+      ${theme.textVariants.body5_bold}
     }
   `;
   return (
     <>
       <IndexContainer>
         <InnerContainer>
-          <SignupTitle>회원가입</SignupTitle>
+          <SignTitle>회원가입</SignTitle>
           <Inner>
             <SignupInput placeholder="사용할 아이디를 입력하세요" />
             <SignupInput placeholder="사용할 비밀번호를 입력하세요" />
