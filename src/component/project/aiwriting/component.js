@@ -1,40 +1,80 @@
 import styled from 'styled-components';
 
-export const AIWritingWrapper = styled.div`
-  width: 100%;
-  max-width: 800px;
+export const IndexContainer = styled.div`
+  width: 1920px;
+  background-color: #fff;
+  position: relative;
   margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column;
 `;
 
-export const WritingAreaWrapper = styled.div`
-  margin-bottom: 20px;
 
-  textarea {
-    width: 100%;
-    height: 200px;
-    padding: 10px;
-    box-sizing: border-box;
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
+export const WritingArea = styled.section`
+    width: 1620px;
+    height: 997px;
+    flex-shrink: 0;
+    display: flex;
+    margin-top: 150px;
 `;
 
-export const ArticleListWrapper = styled.div`
-  border-top: 1px solid #ccc;
-  padding-top: 20px;
+export const Input = styled.div`
+    width: 620px;
+    height: 997px;
+    background: #CAE9C7;
+    display: flex;
+`;
 
-  article {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-  }
+export const Output = styled.div`
+    width: 999px;
+    height: 997px;
+    background-color: #F1F6F1;
+    display: felx;
+`;
+
+export const InputH1 = styled.h1`
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 83.333% */
+`; 
+
+export const InputSpan = styled.span`
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31.5px;
+`;
+
+export const InputProductBox = styled.div`
+    width: 473px;
+    height: 90px;
+    flex-shrink: 0;
+    display: flex;
+`;
+
+export const InputProductH2 = styled.h2`
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 100% */
+`;
+
+export const InputProduct = styled.input`
+    width: 473px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #FFF;
 `;

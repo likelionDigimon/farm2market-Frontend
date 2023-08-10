@@ -7,6 +7,8 @@ import Signup from "./component/project/signup/signup";
 import Proboard from "./component/project/proboard/proboard";
 import QuestionBoard from "./component/project/questionboard/questionboard";
 import AIWriting from "./component/project/aiwriting/aiwriting";
+import Questiondetail from "./component/project/questionboard/questiondetail";
+
 import "./App.css";
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
           <Route path="/proboard" element={<Proboard />} />
           <Route path="/questionboard" element={<QuestionBoard />}/>
           <Route path="/aiwriting" element={<AIWriting />}/>
+          <Route path="/questiondetail" element={<Questiondetail />}/>
         </Routes>
       </BrowserRouter>
     </div>

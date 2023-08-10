@@ -3,7 +3,7 @@ import React from 'react';
 import { IndexContainer, OtherQuestion, Question, QuestionBox, SubTitle, Title, TitleText, Titlebar } from './component';
   
 
-const questionBoard = () => {
+const QuestionBoard = () => {
   return (
     <IndexContainer>
         <Title>
@@ -23,4 +23,4 @@ const questionBoard = () => {
   );
 }
 
-export default questionBoard;
+export default QuestionBoard;
