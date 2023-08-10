@@ -1,47 +1,96 @@
 import React from "react";
-import styled from "@emotion/styled";
-import { IndexContainer, InnerContainer, SignButton } from "./component";
-import theme from "../../../styles/theme";
-import { SignTitle } from "../../emotion/component";
+import {
+  InnerContainer,
+  Inners,
+  SignTitle,
+  InputContainer,
+  SignButton,
+  SignInput,
+  SignP,
+} from "../../emotion/component";
+import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
 
 const Signup = () => {
-  const Inner = styled.div`
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  `;
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({ mode: "onChange" });
 
-  const SignupInput = styled.input`
-    color: #000;
-    width: 636px;
-    border-radius: 10px;
-    border: 0px;
-    padding: 26px 40px;
-    margin-bottom: 16px;
-    ${theme.textVariants.body5_bold}
+  const onSubmit = (data) => {
+    console.log(data);
+    // 서버로 데이터 전송 또는 다른 로직 처리
+  };
 
-    ::placeholder {
-      border: 0px;
-      color: lightgray;
-      ${theme.textVariants.body5_bold}
-    }
-  `;
   return (
     <>
-      <IndexContainer>
-        <InnerContainer>
+      <Inners>
+        <InnerContainer width={"50rem"}>
           <SignTitle>회원가입</SignTitle>
-          <Inner>
-            <SignupInput placeholder="사용할 아이디를 입력하세요" />
-            <SignupInput placeholder="사용할 비밀번호를 입력하세요" />
-            <SignupInput placeholder="이름을 입력하세요" />
-            <SignupInput placeholder="휴대폰 번호를 입력하세요" />
-            <SignButton>가입하기</SignButton>
-          </Inner>
+          <InputContainer>
+            <div>
+              <SignInput
+                id="email"
+                placeholder="사용할 아이디를 입력하세요"
+                {...register("email", {
+                  required: "이메일을 입력하세요",
+                  pattern: {
+                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                    message: "유효한 이메일 주소를 입력하세요",
+                  },
+                })}
+              />
+              {errors.email && <SignP>{errors.email.message}</SignP>}
+            </div>
+
+            <div>
+              <SignInput
+                id="password"
+                placeholder="사용할 비밀번호를 입력하세요"
+                {...register("password", {
+                  required: "비밀번호를 입력하세요",
+                  minLength: {
+                    value: 8,
+                    message: "비밀번호는 최소 8자 이상이어야 합니다",
+                  },
+                })}
+              />
+              {errors.password && <SignP>{errors.password.message}</SignP>}
+            </div>
+            <div>
+              <SignInput
+                id="name"
+                placeholder="이름을 입력하세요"
+                {...register("name", {
+                  required: "이름을 입력하세요",
+                })}
+              />
+              {errors.name && <SignP>{errors.name.message}</SignP>}
+            </div>
+            <div>
+              <SignInput
+                id="phoneNumber"
+                placeholder="휴대폰 번호를 입력하세요"
+                {...register("phoneNumber", {
+                  required: "휴대폰 번호를 입력하세요",
+                  pattern: {
+                    value: /^[0-9]{3}-[0-9]{4}-[0-9]{4}$/i,
+                    message:
+                      "유효한 휴대폰 번호를 입력하세요 (000-0000-0000 형식)",
+                  },
+                })}
+              />
+              {errors.phoneNumber && (
+                <SignP>{errors.phoneNumber.message}</SignP>
+              )}
+            </div>
+            <Link to="/signin">
+              <SignButton>가입 하기</SignButton>
+            </Link>
+          </InputContainer>
         </InnerContainer>
-      </IndexContainer>
+      </Inners>
     </>
   );
 };

@@ -10,7 +10,8 @@ import Community from "./component/project/community";
 import PersonalInquiry from "./component/project/Inquiry/personInquiry";
 import Findid from "./component/project/find/findid";
 import Findpassword from "./component/project/find/findpassword";
-
+import Findresultid from "./component/project/find/findid/result";
+import Findresultpass from "./component/project/find/findpassword/result";
 import "./App.css";
 import Header from "./component/project/header/header";
 
@@ -31,6 +32,8 @@ function App() {
           <Route path="/Inquiry/personal" element={<PersonalInquiry />} />
           <Route path="/findid" element={<Findid />} />
           <Route path="/findpass" element={<Findpassword />} />
+          <Route path="/findid/result" element={<Findresultid />} />
+          <Route path="/findpass/result" element={<Findresultpass />} />
         </Routes>
       </BrowserRouter>
     </div>

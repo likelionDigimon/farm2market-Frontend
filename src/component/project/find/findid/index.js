@@ -31,8 +31,10 @@ const Findid = () => {
           <SignTitle>아이디 찾기</SignTitle>
           <InputContainer>
             <SignInput placeholder="이름을 입력하세요" />
-            <SignInput placeholder="가입시 입력한 휴대폰 번호를 입력하세요" />
-            <SignButton>아이디 찾기</SignButton>
+            <SignInput placeholder="가입 시 입력한 휴대폰 번호를 입력하세요" />
+            <Link to="/findid/result">
+              <SignButton>아이디 찾기</SignButton>
+            </Link>
           </InputContainer>
         </InnerContainer>
       </Inners>

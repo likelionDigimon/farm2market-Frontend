@@ -8,9 +8,11 @@ import {
   SignInput,
   Cblock,
   CheckContainer,
-} from "../../../emotion/component";
+} from "../../../../emotion/component";
 import { Link } from "react-router-dom";
-const Findid = () => {
+import { Resultblock } from "./component";
+
+const Findresultpass = () => {
   return (
     <>
       <Inners>
@@ -28,12 +30,11 @@ const Findid = () => {
         </CheckContainer>
         <InnerContainer width={"50rem"}>
           <SignTitle>비밀번호 찾기</SignTitle>
+          입력하신 정보와 일치하는 비밀번호는 아래와 같습니다.
           <InputContainer>
-            <SignInput placeholder="아이디를 입력하세요" />
-            <SignInput placeholder="이름을 입력하세요" />
-            <SignInput placeholder="가입 시 입력한 휴대폰 번호를 입력하세요" />
-            <Link to="/findpass/result">
-              <SignButton>비밀번호 찾기</SignButton>
+            <Resultblock>000***</Resultblock>
+            <Link to="/">
+              <SignButton>로그인 하러 가기</SignButton>
             </Link>
           </InputContainer>
         </InnerContainer>
@@ -42,4 +43,4 @@ const Findid = () => {
   );
 };
 
-export default Findid;
+export default Findresultpass;

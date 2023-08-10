@@ -360,6 +360,10 @@ export const InnerContainer = ({ width, children }) => (
       padding: 4.5rem;
       background: #76c56f;
       border-radius: 2rem;
+      color: #fff;
+      gap: 3.6rem;
+
+      ${theme.textVariants.body1}
     `}
   >
     {children}
@@ -383,7 +387,6 @@ export const InputContainer = ({ width, children }) => (
 export const SignTitle = styled.div`
   color: #fff;
   ${theme.textVariants.body6_bold}
-  margin-bottom: 3.6rem;
 `;
 
 export const SignButton = styled.div`
@@ -411,7 +414,20 @@ export const SignInput = styled.input`
     ${theme.textVariants.body5_bold}
   }
 `;
-
+export const SignP = ({ children }) => (
+  <p
+    css={css`
+      ${theme.textVariants.body5_bold}
+      margin: 0rem;
+      color: #ff0000;
+      marginbottom: -16px;
+      marginleft: 11px;
+      position: absolute;
+    `}
+  >
+    {children}
+  </p>
+);
 export const CheckContainer = ({ children }) => (
   <div
     css={css`
