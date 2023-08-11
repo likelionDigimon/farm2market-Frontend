@@ -6,8 +6,9 @@ import Signin from "./component/project/signin/signin";
 import Signup from "./component/project/signup/signup";
 import Proboard from "./component/project/proboard/proboard";
 import QuestionBoard from "./component/project/questionboard/questionboard";
-import AIWriting from "./component/project/aiwriting/aiwriting";
+import AIWriting from "./component/project/writing/aiwriting/aiwriting";
 import Questiondetail from "./component/project/questionboard/questiondetail";
+import GenralWriting from "./component/project/writing/generalwriting";
 
 import "./App.css";
 
@@ -23,8 +24,9 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/proboard" element={<Proboard />} />
           <Route path="/questionboard" element={<QuestionBoard />}/>
-          <Route path="/aiwriting" element={<AIWriting />}/>
           <Route path="/questiondetail" element={<Questiondetail />}/>
+          <Route path="/generalwriting" element={<GenralWriting />}/>
+          <Route path="/aiwriting" element={<AIWriting />}/>
         </Routes>
       </BrowserRouter>
     </div>
