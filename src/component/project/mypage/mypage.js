@@ -1,14 +1,8 @@
 import React from "react";
-import {
-  InnerContainer,
-  Title,
-  LeftContainer,
-  RightContainer,
-} from "./component";
+import { InnerContainer, Title, LeftContainer } from "./component";
 import {
   CustomRightContainer,
   TopSection,
-  ContentWrapper,
   BottomSection,
   SideContent,
   Pagebox,
@@ -18,12 +12,12 @@ import {
   Mybutton,
   MyLoge,
 } from "./component";
-import SvgWithMargin, { Container, Rowplace } from "../../emotion/component";
+import SvgWithMargin, { Inners, Rowplace } from "../../emotion/component";
 
 const Mypage = () => {
   return (
     <>
-      <Container>
+      <Inners>
         <Title>마이페이지</Title>
         <InnerContainer>
           <LeftContainer>
@@ -143,7 +137,7 @@ const Mypage = () => {
             </BottomSection>
           </CustomRightContainer>
         </InnerContainer>
-      </Container>
+      </Inners>
     </>
   );
 };

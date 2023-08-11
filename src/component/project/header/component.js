@@ -10,7 +10,7 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 `;
 
 export const Logo = styled.div`

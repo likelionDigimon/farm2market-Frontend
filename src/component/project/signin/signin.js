@@ -31,8 +31,18 @@ const Mypage = () => {
           </Nav>
 
           <Signcheck>
-            <Link to="/signup">회원가입</Link>
-            <Link to="/findid">아이디/비밀번호 찾기</Link>
+            <Link
+              to="/signup"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              회원가입
+            </Link>
+            <Link
+              to="/findid"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              아이디/비밀번호 찾기
+            </Link>
           </Signcheck>
         </InnerContainer>
       </IndexContainer>

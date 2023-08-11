@@ -8,19 +8,14 @@ export const BackgroundContainer = styled.div`
   height: 100vh;
   flex-direction: column;
   overflow-y: auto;
+  overflow-x: hidden;
 `;
 export const Title = styled.div`
-  color: #000;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.2; /* 55.556% */
+  ${theme.textVariants.body3_bold}
   border-left: 5px black solid;
-  padding-left: 20px;
-  margin-left: 147px;
-  margin-top: 20px;
+  padding-left: 1rem;
+  margin-left: 9rem;
+  margin-top: 1rem;
   display: inline-flex;
 `;
 export const InnerContainer = styled.div`
@@ -56,8 +51,6 @@ export const LeftContainer = styled.div`
 export const RightContainer = styled.div`
   width: auto;
   height: 1005px;
->>>>>>> Stashed changes
-  flex-shrink: 0;
   margin: 0px;
   background: #f8f9e3;
   flex-direction: column;
