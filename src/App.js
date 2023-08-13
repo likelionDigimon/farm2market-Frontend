@@ -9,6 +9,8 @@ import QuestionBoard from "./component/project/questionboard/questionboard";
 import AIWriting from "./component/project/writing/aiwriting/aiwriting";
 import Questiondetail from "./component/project/questionboard/questiondetail";
 import GenralWriting from "./component/project/writing/generalwriting";
+import SellDetail from "./component/project/sellboard/selldetail/selldetail";
+import ProDetail from "./component/project/proboard/prodetail/prodetail";
 
 import "./App.css";
 
@@ -27,6 +29,8 @@ function App() {
           <Route path="/questiondetail" element={<Questiondetail />}/>
           <Route path="/generalwriting" element={<GenralWriting />}/>
           <Route path="/aiwriting" element={<AIWriting />}/>
+          <Route path="/selldetail" element={<SellDetail/>}/>
+          <Route path="/prodetail" element={<ProDetail/>}/>
         </Routes>
       </BrowserRouter>
     </div>
