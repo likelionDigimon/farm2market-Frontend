@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChatButton, ChatLogo, ContactBox, ContactContent, ContentBox, ContentImg,
-     Explan, ExplanSpan, IndexContainer, InfoText, InfoTextSpan, 
+     Explan, IndexContainer, InfoText, InfoTextSpan, 
      IntroBox, IntroContent, IntroTitle, ProfileImg, SellerInfo, 
      SellerInfoBox, WantSellerBox, WantSellerContent } from './component';
 
